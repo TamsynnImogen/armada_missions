@@ -1,0 +1,11 @@
+[GameObjectClass]
+classLabel = "planet_obj"
+unitName = "Qo'nos"
+
+//a modifier to the crew accumulation rate for starbases near this planet
+crewModifier = 1.2
+
+//This is known as the SASFN. (Steve's Amazing Scaling Factor Number)
+//Set on 1 = normal size.
+scaleSOD = 1.0
+

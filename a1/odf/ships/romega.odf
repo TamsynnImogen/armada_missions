@@ -1,0 +1,119 @@
+#include "special.odf"
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Containment Vessel"
+tooltip = "Omega Containment Vessel - Omega Tractor Beam"
+verboseTooltip = "Special transport able to tow the Omega Particle."
+
+//Race which can build ship & starting race of ship
+race = "romulan"
+
+//Amount of time required to build ship
+buildTime = 40.0
+
+//Number of officers required to build this ship
+officerCost = 5
+
+//Number of crew required to build ship & Starting crew
+crewCost = 350
+
+//Dilithium Cost to build
+dilithiumCost = 400
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 400
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 1.0
+
+//Maximum Value of Special Energy
+maxSpecialEnergy = 0
+
+//Rate at which special energy recharges (points per second... we think)
+specialEnergyRate = 0
+
+//**********************************************************************
+//SHIP NAMES
+
+//Possible Craft Names
+possibleCraftNames = "Containment Vessel"
+
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Towing Beam
+weapon1 = "gtracbmo"
+weaponHardpoints1 = "tractor"
+
+
+// Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp01" "hp02" "hp04" "hp05"
+lifeSupportTargetHardpoints = "hp01" "hp02" "hp04" "hp05"
+weaponsTargetHardpoints = "hp01" "hp02" "hp04" "hp05"
+shieldGeneratorTargetHardpoints = "hp01" "hp02" "hp04" "hp05"
+sensorsTargetHardpoints = "hp01" "hp02" "hp04" "hp05"
+hullTargetHardpoints = "hp01" "hp02" "hp04" "hp05"
+criticalTargetHardpoints = "hp01" "hp02" "hp04" "hp05"
+
+//**********************************************************************
+
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+//An abstract number that represents how much extra strength must be
+//used to attack this craft due to its weapons. 
+// (0.0=no weapons, 0.5 = average weapons, 1.0=many good weapons)
+attackPower = 0.75f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 0.30f
+
+
+//**********************************************************************
+//SYSTEM DAMAGE DISTRIBUTION
+//The following section's values should add up to 100
+//Percent Chance out of 100 of engines being destroyed
+enginesHitPercent = 2.0f
+
+//Percent Chance out of 100 of life support being destroyed
+lifeSupportHitPercent = 2.5f
+
+//Percent Chance out of 100 of weapons being destroyed
+weaponsHitPercent = 10.0f
+
+//Percent Chance out of 100 of shields being destroyed
+shieldGeneratorHitPercent = 7.5f
+
+//Percent Chance out of 100 of sensors being destroyed
+sensorsHitPercent = 7.5f
+
+//Percent Chance out of 100 of hull being hit (crew dying)
+hullHitPercent = 70.0f
+
+//Percent Chance out of 100 of entire ship exploding
+criticalHitPercent = 0.5f
+//**********************************************************************
+
+
+
+//**********************************************************************
+
+// This is the size of the build animation sparks.
+weldingRadius = 0.25
+
+//**********************************************************************
+
+//MESSAGE & SOUND PARAMETERS
+
+eventSelect = "SuperSelect"
+eventAcknowledge = "SuperAcknowledge"
+eventAttack = "SuperAttack"
+eventStop = "SuperStop"
+eventMove = "SuperMove"
+eventRepair = "SuperRepair"
+
+ScaleSOD = .8
+

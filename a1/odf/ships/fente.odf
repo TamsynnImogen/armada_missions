@@ -1,0 +1,141 @@
+#include "battle.odf"
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Sovereign Class"
+tooltip = "USS Enterprise NCC 1701-E - Corbomite Reflector"
+//verboseTooltip = "WRITE ME"
+
+//This ship is a hero.
+isHero = 1
+
+//Ship label provided because this is a unique ship.
+label = "Enterprise NCC 1701-E"
+
+//Race which can build ship & starting race of ship
+race = "federation"
+
+//Amount of time required to build ship
+buildTime = 80.0
+
+//Number of officers required to build this ship
+officerCost = 7
+
+//Number of crew required to build ship & Starting crew
+crewCost = 750
+
+//Dilithium Cost to build
+dilithiumCost = 0
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 1500
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 7.5
+
+//Maximum Value of Special Energy
+maxSpecialEnergy = 1000
+
+//Rate at which special energy recharges (points per second... we think)
+specialEnergyRate = 10
+
+//**********************************************************************
+
+//**********************************************************************
+//SHIP NAMES
+
+//Possible Craft Names
+possibleCraftNames = "USS Enterprise-E"
+
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// phaser
+weapon1 = "fbphas"
+weaponHardpoints1 = "hp19" "hp20" "hp21" "hp22" "hp23" "hp24"
+	"hp25" "hp26" "hp27" "hp28" "hp29" "hp30" "hp31" "hp32"
+
+// Photon torpedos
+weapon2 = "fbphot"
+weaponHardpoints2 = "hp04" "hp05" "hp06" "hp07"
+
+//Corbimite Reflector
+weapon3 = "hcorbom"
+weaponHardpoints3 = "hp05" "hp06" "hp07"
+
+//Self Destruct
+weapon4 = "gselfdes"
+weaponHardpoints4 = "hp05" "hp06" "hp07"
+
+
+// Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp09" "hp10" "hp11" "hp12"
+lifeSupportTargetHardpoints = "hp13" "hp14"
+weaponsTargetHardpoints = "hp13" "hp14"
+shieldGeneratorTargetHardpoints = "hp13" "hp14"
+sensorsTargetHardpoints = "hp13" "hp14"
+hullTargetHardpoints = "hp09" "hp10" "hp11" "hp12" "hp13" "hp14"
+criticalTargetHardpoints = "hp11" "hp12" "hp13" "hp14"
+//**********************************************************************
+
+//**********************************************************************
+//SYSTEM HITPOINTS
+//These values are the hitpoint values of the systems
+//If the value is set to zero the ship does not have that system
+enginesHitPoints = 20
+lifeSupportHitPoints = 20
+weaponsHitPoints = 20
+shieldGeneratorHitPoints = 20
+sensorsHitPoints = 20
+//**********************************************************************
+ 
+
+
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+//An abstract number that represents how much extra strength must be
+//used to attack this craft due to its weapons. 
+// (0.0=no weapons, 0.5 = average weapons, 1.0=many good weapons)
+attackPower = 1.00f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 0.60f
+//**********************************************************************
+
+
+//**********************************************************************
+//CREW STATUS MULTIPLIERS
+//The multiplier for the delay between shots for weapons while in yellow status
+weaponYellow = 1.0f
+
+//The multiplier for the delay between shots for weapons while in red status
+weaponRed = 2.0f
+//**********************************************************************
+
+
+
+//**********************************************************************
+//MESSAGE & SOUND PARAMETERS
+
+eventSelect = "PicardSelect"
+eventAcknowledge = "PicardAcknowledge"
+eventAttack = "PicardAttack"
+eventRedAlert = "PicardRedAlert"
+eventYellowAlert = "PicardYellowAlert"
+eventGreenAlert = "PicardGreenAlert"
+eventStop = "PicardStop"
+eventMove = "PicardMove"
+eventRepair = "PicardRepair"
+eventDecommission = "PicardDecommission"
+eventTransport = "PicardTransport"
+eventSelfDestruct = "PicardSelfDestruct"
+
+//**********************************************************************
+
+//change the scale
+ScaleSOD = 1.6
+
+

@@ -1,0 +1,69 @@
+// Runtime class of object.
+classLabel = "nebula_obj"
+
+// Name of type.
+unitName = "Cerulean Nebula"
+
+//Sound played
+ambientSound = "msnebam.wav"
+
+// Effect Radius of nebula
+effectRadius = 100
+
+// How expensive it is to path through 
+pathing_cost = 800
+
+// Set the effect flags. 0 = no effect, 1 = disable system
+disableWeapons = 1
+disableShields = 1
+disableSensors = 0
+disableCrew = 0
+disableCloak = 1
+
+// Set damage flags and timer
+//damage of ship per frame
+damageValue = 0
+
+//lifespan of cloud. If set to 0, cloud is permenant
+lifeTimer = 0
+
+// Object inside this nebula are hidden from sensors.
+hideContents = 1
+
+// Sprite to use for minimap display.
+mapSprite = "map_nebula5"
+
+// Size of sprite chunk to use for minimap.
+mapSize = 5
+
+// We generate the mesh for this in code
+dont_load_SOD = 0
+
+// How fast does pulsing change speed? (1st derivatives of pulsing speed)
+min_speed_change = 0.0025
+speed_change_period_divisor = 0.3
+speed_change_range = 0.6
+
+// We have a one in n chance of getting a light source
+one_in_n_chance_of_light_source = 6
+
+// What's the base light source color?
+red_glow = 0.0
+green_glow = 0.0
+blue_glow = 0.5
+
+// What's the allowable color swing of the light source?
+red_glow_range = 0.0
+green_glow_range = 0.7
+blue_glow_range = 0.5
+
+// How does the lighting fall off?
+glow_falloff_start = 60.0
+glow_falloff_range = 60.0
+
+// How do we slow down ships? (coefficient is a multiple, speed limit
+// is a cap; set speed limit to -1 to have an unlimited speed limit)
+craft_speed_coefficient = 1.0
+craft_speed_limit = -1
+
+

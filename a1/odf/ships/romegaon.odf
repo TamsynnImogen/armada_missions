@@ -1,0 +1,22 @@
+#include "romega.odf"
+
+fireball = "xomega"
+
+//**********************************************************************
+//SYSTEM HITPOINTS
+//These values are the hitpoint values of the systems
+//If the value is set to zero the ship does not have that system
+enginesHitPoints = 30
+lifeSupportHitPoints = 30
+weaponsHitPoints = 30
+shieldGeneratorHitPoints = 30
+sensorsHitPoints = 30
+//**********************************************************************
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 550
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 1.3
+
+

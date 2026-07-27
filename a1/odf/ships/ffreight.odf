@@ -1,0 +1,87 @@
+#include "freight.odf"
+
+//MAIN DESIGN PARAMETERS
+
+//Race which can build ship & starting race of ship
+race = "federation"
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Mining Freighter"
+
+//tooltips
+tooltip = "FED_FREIGHT"
+verboseTooltip = "FED_FREIGHT_V"
+
+//Amount of time required to build ship
+buildTime = 13.0
+
+//Number of officers required to build this ship
+officerCost = 1
+
+//Number of crew required to build ship & Starting crew
+crewCost = 100
+
+//Dilithium Cost to build
+dilithiumCost = 150
+
+//Metal Cost to build
+metalCost = 0
+
+//Max Shield Strength & Begining Shield Strength <500
+maxHealth = 250
+
+// Hitpoints
+
+shieldGeneratorHitPoints = 75
+enginesHitPoints = 40
+weaponsHitPoints = 40
+lifeSupportHitPoints = 50
+sensorsHitPoints = 40
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 2.5
+
+// which resources can this station process?
+resourcesCanHandle = "dilithium" "latinum"
+
+
+//**********************************************************************
+//SHIP NAMES
+
+//Possible Craft Names
+possibleCraftNames = 
+	"USS Everest" "USS Antononia" "USS Baker" "USS Batu" "USS Cameroon"
+	"USS Voralpe" "USS Borj" "USS Indrasan" "USS Fuji" "USS Cristo"
+	"USS Elgon" "USS Kenya" "USS Kilimanjaro" "USS Meru" "USS Stanley"
+	"USS Tafelberg" "USS Wolfberg" "USS Corazon" "USS Pierce" "USS Owen"
+	"USS Temple" "USS Steele" "USS Regan" "USS Remmel" "USS Oxford" "USS Boston"
+
+
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Mining Beam for dilithium
+weapon1 = "gmineDilithium"
+weaponHardpoints1 = "hp01" "hp02" "hp03" "hp10"
+
+// Mining Beam Latinum
+weapon2 = "gmineLatinum"
+weaponHardpoints2 = "hp01" "hp02" "hp03" "hp10"
+
+
+
+// Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp11" "hp13"
+lifeSupportTargetHardpoints = "hp04" "hp05" "hp06"
+weaponsTargetHardpoints = "hp04" "hp05" "hp06"
+shieldGeneratorTargetHardpoints = "hp04" "hp05" "hp06"
+sensorsTargetHardpoints = "hp04" "hp05" "hp06"
+hullTargetHardpoints = "hp07" "hp08" "hp09" "hp14"
+criticalTargetHardpoints = "hp04" "hp05" "hp06"
+
+latinum_spray_hardpoint = "hp08"
+
+//**********************************************************************
+
+hotkeyLabel = "HOTKEY_F2"

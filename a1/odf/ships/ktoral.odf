@@ -1,0 +1,123 @@
+#include "battle.odf"
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Negh'Var Class"
+tooltip = "Toral's Negh'Var - Ion Cannon"
+//verboseTooltip = "WRITE ME"
+
+//This ship is a hero.
+isHero = 1
+
+//Ship label provided because this is a unique ship.
+label = "Toral's Negh'Var"
+
+//Race which can build ship & starting race of ship
+race = "klingon"
+
+//Amount of time required to build ship
+buildTime = 80.0
+
+//Number of officers required to build this ship
+officerCost = 7
+
+//Number of crew required to build ship & Starting crew
+crewCost = 400
+
+//Dilithium Cost to build
+dilithiumCost = 800
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 675
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 3.375
+
+//Maximum Value of Special Energy
+maxSpecialEnergy = 1000
+
+//Rate at which special energy recharges (points per second... we think)
+specialEnergyRate = 10
+
+//**********************************************************************
+
+//**********************************************************************
+//SHIP NAMES
+
+//Possible Craft Names
+possibleCraftNames = "Toral's Negh'Var"
+
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Phaser
+weapon1 = "kbphas"
+weaponHardpoints1 = "hp01" "hp02" "hp03" "hp04" "hp06"
+
+// Photon Torpedo
+weapon2 = "kbphot"
+weaponHardpoints2 = "hp01" "hp02" "hp05" "hp06"
+
+// Plasma Cannon
+weapon3 = "hplasmac"
+weaponHardpoints3 = "hp02" "hp05" "hp06"
+
+
+// Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp10" "hp14" "hp17" "hp18" "hp21" "hp22" "hp25"
+lifeSupportTargetHardpoints = "hp10" "hp14" "hp17" "hp18" "hp21" "hp22" "hp25"
+weaponsTargetHardpoints = "hp10" "hp14" "hp17" "hp18" "hp21" "hp22" "hp25"
+shieldGeneratorTargetHardpoints = "hp10" "hp14" "hp17" "hp18" "hp21" "hp22" "hp25"
+sensorsTargetHardpoints = "hp10" "hp14" "hp17" "hp18" "hp21" "hp22" "hp25"
+hullTargetHardpoints = "hp10" "hp14" "hp17" "hp18" "hp21" "hp22" "hp25"
+criticalTargetHardpoints = "hp10" "hp14" "hp17" "hp18" "hp21" "hp22" "hp25"
+
+
+//**********************************************************************
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+//An abstract number that represents how much extra strength must be
+//used to attack this craft due to its weapons. 
+// (0.0=no weapons, 0.5 = average weapons, 1.0=many good weapons)
+attackPower = 1.00f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 0.75f
+
+
+//**********************************************************************
+
+//**********************************************************************
+//CREW STATUS MULTIPLIERS
+//The multiplier for the delay between shots for weapons while in yellow status
+weaponYellow = 1.0f
+
+//The multiplier for the delay between shots for weapons while in red status
+weaponRed = 0.75f
+//**********************************************************************
+
+
+//**********************************************************************
+//MESSAGE & SOUND PARAMETERS
+
+eventSelect = "BattleSelect"
+eventAcknowledge = "BattleAcknowledge"
+eventAttack = "BattleAttack"
+eventRedAlert = "BattleRedAlert"
+eventYellowAlert = "BattleYellowAlert"
+eventGreenAlert = "BattleGreenAlert"
+eventStop = "BattleStop"
+eventMove = "BattleMove"
+eventRepair = "BattleRepair"
+eventSelfDestruct = "BattleSelfDestruct"
+
+//**********************************************************************
+
+// Name of the geometry it is using
+baseName = "kbattle"
+
+//change the scale
+ScaleSOD = 1.6

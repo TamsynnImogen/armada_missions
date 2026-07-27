@@ -1,0 +1,91 @@
+#include "const.odf"
+
+//Race which can build ship & starting race of ship
+race = "federation"
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Construction Ship"
+tooltip = "^Construction Ship - Tractor Beam"
+verboseTooltip = "Builds all stations and facilities."
+
+//Amount of time required to build ship
+buildTime = 50.0
+
+//Number of officers required to build this ship
+officerCost = 2
+
+//Number of crew required to build ship & Starting crew
+crewCost = 500
+
+//Dilithium Cost to build
+dilithiumCost = 500
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 700
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 3.5
+
+//**********************************************************************
+//Construction Parameters
+buildItem0 = "fbase"
+buildItem1 = "fmining"
+buildItem2 = "fyard"
+buildItem3 = "fsensor"
+buildItem4 = "fturret"
+buildItem5 = "fturret2"
+buildItem6 = "fresear"
+buildItem7 = "fresear2"
+buildItem8 = "fyard2"
+buildItem9 = "fsuperbl"
+//**********************************************************************
+
+//**********************************************************************
+//Worker Bee Parameters
+
+// Name of the worker bee SOD.
+workerBeeName = "fbee"
+weldingBeamWidth = 5.0
+
+//**********************************************************************
+//SHIP NAMES
+
+//Possible Craft Names
+possibleCraftNames = 
+	"USS Geary" "USS Wright" "USS Raphael" "USS Pei"
+	"USS Chen" "USS Hawkins" "USS Son" "USS Williams" 
+	"USS Danan" "USS Hancock" "USS Davis" "USS Braverman"
+	"USS Muir" "USS Scarpa" "USS Gaudi" "USS Palladio"
+	"USS Hejduk" "USS Meyers" "USS Calatravo" "USS Eisenman"
+	"USS Sullivan" "USS Roddenberry" "USS Frost" "USS Elliot"
+	"USS Walden" "USS O’Toole" "USS Zechariah" "USS M.L.King"
+	"USS Walkin" "USS Lahman" "USS Campbell" "USS Dalzell"                      
+	"USS Bradshaw" "USS Moore" "USS Webster" "USS Lang"
+	"USS Dutton" "USS Scott" "USS Malamed" "USS Moyes"
+	"USS Somers" "USS Mayeda" "USS Boehm" "USS Woo"
+	"USS Robinson" "USS Truffaut" "USS Godard"
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Weapon Name (ex. "gphaser" -> gphaser.odf)
+//weapon1 = "gphaser"
+//weaponHardpoints1 = "hp12" "hp15" "hp16" "hp17" "hp18" "hp19" "hp20"
+
+// Towing Beam
+weapon1 = "gtracbm"
+weaponhardpoints1 = "hp12"
+
+// Hardpoints to hit for various systems and other locations.
+
+enginesTargetHardpoints = "hp06"
+lifeSupportTargetHardpoints = "hp06" "hp08" "hp09" 
+weaponsTargetHardpoints = "hp06" "hp08" "hp09"
+shieldGeneratorTargetHardpoints = "hp06" "hp08" "hp09" 
+sensorsTargetHardpoints = "hp06" "hp08" "hp09" 
+hullTargetHardpoints = "hp08" "hp09" "hp10" "hp11" "hp13" 
+criticalTargetHardpoints = "hp06" "hp08" "hp09"
+
+//**********************************************************************
+
+

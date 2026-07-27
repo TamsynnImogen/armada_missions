@@ -1,0 +1,220 @@
+[GameObjectClass]
+//**********************************************************************
+//MAIN DESIGN PARAMETERS
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Species 9341"
+tooltip = "Mother Entity"
+verboseTooltip = "Spawns Alien Entities"
+
+//Race which can build ship & starting race of ship
+race = "alien"
+
+//Amount of time required to build ship
+buildTime = 80.0
+
+//Number of officers required to build this ship
+officerCost = 0
+
+//Number of crew required to build ship & Starting crew
+crewCost = 0
+
+//Dilithium Cost to build
+dilithiumCost = 800
+
+//Decommisioning Dilithium value ???
+scrapValue = 800
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 1000
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 5
+
+//Delay before shield begins recharging once it has reached zero (secs)
+shieldDelay = 3.0f
+
+//Maximum Value of Special Energy
+maxSpecialEnergy = 500
+
+//Rate at which special energy recharges (points per second... we think)
+specialEnergyRate = 5
+
+//This is the range in meters which the ships sensors can see (LOS)
+rangeScan = 500.0f
+
+//This is the range in meters which the ships sensors can see when destroyed
+damagedScan = 150.0f
+
+//**********************************************************************
+
+//Possible Craft Names
+possibleCraftNames = 
+	"Mother Entity"
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Weapon Name (ex. "gphaser" -> gphaser.odf)
+weapon1 = "hplasma2"
+weaponHardpoints1 = "hp01" "hp02" "hp03" "hp04" "hp05"
+	"hp06" "hp07" "hp08" "hp09"
+
+// Rest of the weapons...
+//weapon2 = "gpsyblst"
+//weaponHardpoints2 = "hp01" "hp06" "hp07"
+
+// Hardpoints to hit for various systems and other locations.
+//enginesTargetHardpoints = "hp05" "hp06"
+//lifeSupportTargetHardpoints = "hp01"
+//weaponsTargetHardpoints = "hp02" "hp03"
+//shieldGeneratorTargetHardpoints = "hp08" "hp09"
+//sensorsTargetHardpoints = "hp07"
+//hullTargetHardpoints = "hp02" "hp03" "hp07" "hp08" "hp09"
+//criticalTargetHardpoints = "hp04"
+
+
+//**********************************************************************
+//Construction Parameters
+buildItem0 = "zentity"
+
+//Hardpoint location for building.
+buildHardpoint = "hp01"
+//**********************************************************************
+
+
+//**********************************************************************
+//CREW STATUS MULTIPLIERS
+//The percentage at which the crew enters yellow status (ex. 0.75f)
+crewYellowStatus = 0.5f
+
+//The percentage at which the crew enters red status (ex. 0.25f)
+crewRedStatus = 0.25f
+
+//The multiplier for the repair time while in yellow status
+repairYellow = 1.5f
+
+//The multiplier for the repair time while in red status
+repairRed = 2.0f
+
+//The multiplier for the delay between shots for weapons while in yellow status
+weaponYellow = 1.5f
+
+//The multiplier for the delay between shots for weapons while in red status
+weaponRed = 3.0f
+//**********************************************************************
+
+
+
+//**********************************************************************
+//SYSTEM HITPOINTS
+//These values are the hitpoint values of the systems
+//If the value is set to zero the ship does not have that system
+enginesHitPoints = 0
+lifeSupportHitPoints = 1
+weaponsHitPoints = 1
+shieldGeneratorHitPoints = 1
+sensorsHitPoints = 1
+//**********************************************************************
+ 
+//**********************************************************************
+//SYSTEM DAMAGE DISTRIBUTION
+//The following section's values should add up to 100
+//Percent Chance out of 100 of engines being destroyed
+enginesHitPercent = 0.0f
+
+//Percent Chance out of 100 of life support being destroyed
+lifeSupportHitPercent = 4.5f
+
+//Percent Chance out of 100 of weapons being destroyed
+weaponsHitPercent = 10.0f
+
+//Percent Chance out of 100 of shields being destroyed
+shieldGeneratorHitPercent = 7.5f
+
+//Percent Chance out of 100 of sensors being destroyed
+sensorsHitPercent = 7.5f
+
+//Percent Chance out of 100 of hull being hit (crew dying)
+hullHitPercent = 70.0f
+
+//Percent Chance out of 100 of entire ship exploding
+criticalHitPercent = 0.5f
+//**********************************************************************
+
+
+//**********************************************************************
+//SYSTEM REPAIR RATES
+//This is the amount of time in seconds to repair ONE hitpoint of damage
+//modified by race and crew status
+enginesRepairTime = 5.0f
+lifeSupportRepairTime = 10.0f
+weaponsRepairTime = 60.0f
+shieldGeneratorRepairTime = 60.0f
+sensorsRepairTime = 60.0f
+//**********************************************************************
+
+
+//**********************************************************************
+//CREW CASUALTY FOR SYSTEM DESTRUCTION
+//The percentage of crew killed when the engines are destroyed
+enginesCrewLoss = 5.0f
+
+//The percentage of crew killed when the lifesupport is destroyed
+lifeSupportCrewLoss = 3.0f
+
+//The percentage of crew killed when the weapons are destroyed
+weaponsCrewLoss = 2.0f
+
+//The percentage of crew killed when the shields are destroyed
+shieldGeneratorCrewLoss = 2.0f
+
+//The percentage of crew killed when the sensors are destroyed
+sensorsCrewLoss = 2.0f
+
+//The percentage of crew lost every second while life support is disabled
+lifeSupportLoss = 2.0f
+//**********************************************************************
+
+
+
+//**********************************************************************
+//MESSAGE & SOUND PARAMETERS
+//**********************************************************************
+
+
+//**********************************************************************
+//PROGRAMMING PARAMETERS WHICH SHOULD NOT BE CHANGED & UNUSED PARAMETERS
+
+//Runtime class label for instantiation of object.
+classLabel = "shipyard"
+
+//This tells the program that this object is a starbase and to ignore
+//collisions so that it does not move.
+is_starbase = 1
+
+//**********************************************************************
+
+
+//**********************************************************************
+//AI Processes
+
+//Friendly AI
+aiName = "CraftProcess"
+
+//**********************************************************************
+
+//DO NOT CHANGE!
+//This shipyard does not have a repair facility
+repairFacility = 0
+
+//**********************************************************************
+//PHYSICS PARAMETERS
+
+//speed when in combat
+//impulseSpeed = 10
+
+//speed when moving far distances
+//warpSpeed = 45
+
+physicsFile = "destphys.odf"

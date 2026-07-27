@@ -1,0 +1,59 @@
+// Geometry name.
+baseName = "Xprmgate"
+
+// Runtime class type (DO NOT EDIT)
+classLabel = "wormhole_obj"
+
+// Object name.
+unitName = "Temporal Gate"
+
+//play animation and loop it
+animation = 2
+
+//Time (in seconds) it takes to go from closed to open
+AnimationTime = 2.0f
+
+//Sets the "closed" scale of the wormhole
+ClosedScale = 0.7f
+
+//Sets the "open" scale of the wormhole
+OpenScale = 2.5f
+
+// Set the rotation
+Rotation = -0.6f
+
+// ???
+DisableTimer = 10
+
+//What's the color of the internal light
+red_glow = 1.0
+green_glow = 1.0
+blue_glow = 1.0
+
+//How does lighting fall off?
+glow_falloff_start = 60.0
+glow_falloff_range = 60.0
+
+//Constants affecting how craft moves into wormhole
+
+//the range at which the craft starts to speed up
+SpeedEffectRange = 75.0f
+//the maximum factor applied to the speed (at range = 0)
+MaxSpeedFactor = 4.0f
+
+//the range at which the craft begins to "stretch"
+ScaleEffectRange = 75.0f
+//the maximum stretch factor (achieved at range = 0)
+MaxScaleFactor = 1.0f
+
+// do not avoid
+avoidMe = 0
+
+// Icon for the minimap (only temporary, don't need a mapIcon)
+//mapIcon = "map_worm"
+
+// The sound played when the wormhole opens
+openSound = "swbmasto.wav"
+
+// The sound played when the wormhole opens
+closeSound = "swbmastc.wav"

@@ -1,0 +1,86 @@
+#include "const.odf"
+
+//Race which can build ship & starting race of ship
+race = "borg"
+
+baseName = "bconst"
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Assembler"
+tooltip = "Assembler (^C) - Tractor Beam"
+verboseTooltip = "Constructs all stations and facilities."
+
+//Amount of time required to build ship
+buildTime = 50.0
+
+//Number of officers required to build this ship
+officerCost = 2
+
+//Number of crew required to build ship & Starting crew
+crewCost = 100
+
+//Dilithium Cost to build
+dilithiumCost = 500
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 700
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 3.5
+
+
+//**********************************************************************
+//Construction Parameters
+buildItem0 = "bsuperbl"
+//**********************************************************************
+
+//**********************************************************************
+//Worker Bee Parameters
+
+// Name of the worker bee SOD.
+workerBeeName = "bbee"
+
+//**********************************************************************
+//SHIP NAMES
+
+//Possible Craft Names
+possibleCraftNames = 
+	"G204-18984" "G204-11861" "G204-94814" "G204-68165"
+	"G204-98108" "G204-90484" "G204-74860" "G204-68468"
+	"G204-86405" "G204-85615" "G204-54580" "G204-45105"
+	"G204-50055" "G204-45044" "G204-50155" "G204-84746"
+	"G204-18600" "G204-45605" "G204-48912" "G204-45444"
+	"G204-48684" "G204-94474" "G204-10848" "G204-84068"
+
+//**********************************************************************
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Weapon Name (ex. "gphaser" -> gphaser.odf)
+//weapon1 = "gphaser"
+//weaponHardpoints1 = "hp01" "hp02"
+
+// Towing Beam
+weapon1 = "gtracbm"
+weaponHardpoints1 = "hp05"
+
+
+// Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp09" "hp10" "hp12" "hp14"
+lifeSupportTargetHardpoints = "hp09" "hp10" "hp12" "hp14"
+weaponsTargetHardpoints = "hp09" "hp10" "hp12" "hp14"
+shieldGeneratorTargetHardpoints = "hp09" "hp10" "hp12" "hp14"
+sensorsTargetHardpoints = "hp09" "hp10" "hp12" "hp14"
+hullTargetHardpoints = "hp09" "hp10" "hp11" "hp12" "hp13" "hp14" "hp15"
+criticalTargetHardpoints = "hp09" "hp10" "hp12" "hp14"
+
+//**********************************************************************
+
+
+//PHYSICS Parameter
+
+// Disable banking (by making the maximum bank angle 1 degree)
+maxRoll = 1
+
+

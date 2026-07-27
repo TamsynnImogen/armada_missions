@@ -1,0 +1,6 @@
+[GameObjectClass]
+classLabel = "planet_obj"
+unitName = "Borg Collective1"
+
+//a modifier to the crew accumulation rate for starbases near this planet
+crewModifier = 1.0

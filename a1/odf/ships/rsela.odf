@@ -1,0 +1,141 @@
+#include "battle.odf"
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Warbird Class"
+tooltip = "Sela's Warbird - Shield Inversion Beam"
+//verboseTooltip = "WRITE ME"
+
+//This ship is a hero.
+isHero = 1
+
+//Ship label provided because this is a unique ship.
+label = "Sela's Warbird"
+
+//Race which can build ship & starting race of ship
+race = "romulan"
+
+//Amount of time required to build ship
+buildTime = 80.0
+
+//Number of officers required to build this ship
+officerCost = 7
+
+//Number of crew required to build ship & Starting crew
+crewCost = 400
+
+//Dilithium Cost to build
+dilithiumCost = 1000
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 1500
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 7.5
+
+//Maximum Value of Special Energy
+maxSpecialEnergy = 1000
+
+//Rate at which special energy recharges (points per second... we think)
+specialEnergyRate = 15
+
+//**********************************************************************
+
+//**********************************************************************
+//SHIP NAMES
+
+//Possible Craft Names
+possibleCraftNames = "Sela's Warbird"
+
+//**********************************************************************
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Phaser
+weapon1 = "rbphas"
+weaponHardpoints1 = "hp01" "hp02" "hp03"
+	
+// Photon Torpedo
+weapon2 = "rbphot"
+weaponHardpoints2 = "hp01" "hp02" "hp03" "hp04" 
+
+// Cloaking Device
+weapon3 = "grcloak"
+weaponHardpoints3 = "hp01"
+
+// Shield Inversion Field
+weapon4 = "hshieldi"
+weaponHardpoints4 = "hp01" "hp02" "hp03"
+
+// Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp13" "hp19" "hp21"
+lifeSupportTargetHardpoints = "hp12" "hp14" "hp18" "hp19" "hp24"
+weaponsTargetHardpoints = "hp12" "hp14" "hp18" "hp19" "hp24"
+shieldGeneratorTargetHardpoints = "hp12" "hp14" "hp18" "hp19" "hp24"
+sensorsTargetHardpoints = "hp12" "hp14" "hp18" "hp19" "hp24"
+hullTargetHardpoints = "hp12" "hp14" "hp18" "hp19" "hp24"
+criticalTargetHardpoints = "hp12" "hp13" "hp14" "hp18" "hp19" "hp21" "hp24"
+
+
+
+//**********************************************************************
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+//An abstract number that represents how much extra strength must be
+//used to attack this craft due to its weapons. 
+// (0.0=no weapons, 0.5 = average weapons, 1.0=many good weapons)
+attackPower = 1.00f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 0.50f
+
+
+//**********************************************************************
+//CREW STATUS MULTIPLIERS
+//The multiplier for the delay between shots for weapons while in yellow status
+weaponYellow = 1.5f
+
+//The multiplier for the delay between shots for weapons while in red status
+weaponRed = 2.0f
+//**********************************************************************
+
+//**********************************************************************
+//SYSTEM HITPOINTS
+//These values are the hitpoint values of the systems
+//If the value is set to zero the ship does not have that system
+enginesHitPoints = 20
+lifeSupportHitPoints = 20
+weaponsHitPoints = 20
+shieldGeneratorHitPoints = 20
+sensorsHitPoints = 20
+//**********************************************************************
+ 
+
+
+//**********************************************************************
+//MESSAGE & SOUND PARAMETERS
+
+eventSelect = "SelaSelect"
+eventAcknowledge = "SelaAcknowledge"
+eventAttack = "SelaAttack"
+eventRedAlert = "SelaRedAlert"
+eventYellowAlert = "SelaYellowAlert"
+eventGreenAlert = "SelaGreenAlert"
+eventStop = "SelaStop"
+eventMove = "SelaMove"
+eventRepair = "SelaRepair"
+eventDecommission = "SelaDecommission"
+eventCloakEngage = "SelaCloakEngage"
+eventCloakDisengage = "SelaCloakDisengage"
+eventTransport = "SelaTransport"
+eventSelfDestruct = "SelaSelfDestruct"
+
+//**********************************************************************
+// Name of the geometry it is using
+baseName = "rbattle"
+
+//change the scale
+ScaleSOD = 1.3

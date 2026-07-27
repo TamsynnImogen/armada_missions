@@ -1,0 +1,96 @@
+#include "station.odf"
+
+//**********************************************************************
+//MAIN DESIGN PARAMETERS
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Dominion Shipyard"
+tooltip = "Dominion Shipyard"
+verboseTooltip = "Constructs Jem'Hadar Warships and Destroyers."
+
+//Race which can build ship & starting race of ship
+race = "dominion"
+
+//Amount of time required to build ship
+buildTime = 70.0
+
+//Number of officers required to build this ship
+officerCost = 5
+
+//Number of crew required to build ship & Starting crew
+crewCost = 400
+
+//Dilithium Cost to build
+dilithiumCost = 1200
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 1000
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 0.83
+
+//Possible Craft Names
+possibleCraftNames = 
+	"Station Alpha" 
+
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+
+// Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp10" "hp11" "hp12" "hp13" "hp14" "hp16"
+lifeSupportTargetHardpoints = "hp10" "hp11" "hp12" "hp13" "hp14" "hp16"
+weaponsTargetHardpoints = "hp10" "hp11" "hp12" "hp13" "hp14" "hp16"
+shieldGeneratorTargetHardpoints = "hp10" "hp11" "hp12" "hp13" "hp14" "hp16"
+sensorsTargetHardpoints = "hp10" "hp11" "hp12" "hp13" "hp14" "hp16"
+hullTargetHardpoints = "hp10" "hp11" "hp12" "hp13" "hp14" "hp16"
+criticalTargetHardpoints = "hp10" "hp11" "hp12" "hp13" "hp14" "hp16"
+
+//**********************************************************************
+
+
+//**********************************************************************
+//Construction Parameters
+buildItem0 = "zjemdest"
+buildItem1 = "zjembat"
+
+
+//Hardpoint location for building.
+buildHardpoint = "build"
+//**********************************************************************
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 1.00f
+
+
+//**********************************************************************
+
+//**********************************************************************
+//MESSAGE & SOUND PARAMETERS
+//**********************************************************************
+
+eventSelect = "ShipyardSelect"
+eventAcknowledge = "ShipyardAcknowledge"
+eventDecommission = "ShipyardDecommission"
+
+
+//**********************************************************************
+//PROGRAMMING PARAMETERS WHICH SHOULD NOT BE CHANGED & UNUSED PARAMETERS
+
+//Runtime class label for instantiation of object.
+classLabel = "shipyard"
+
+//KEYMAP LABEL
+keymapLabel = "shipyard"
+
+//scale it larger
+ScaleSOD = 1.8
+
+
+

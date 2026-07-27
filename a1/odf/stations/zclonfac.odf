@@ -1,0 +1,116 @@
+#include "station.odf"
+
+//**********************************************************************
+//MAIN DESIGN PARAMETERS
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Cloning Facility"
+tooltip = "Dominion Cloning Facility"
+verboseTooltip = "Clones Jem'Hadar warriors."
+
+//Race which can build ship & starting race of ship
+race = "dominion"
+
+//Amount of time required to build ship
+buildTime = 100.0
+
+//Number of officers required to build this ship
+officerCost = 15
+
+//Number of crew required to build ship & Starting crew
+crewCost = 300
+
+//Dilithium Cost to build
+dilithiumCost = 2000
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 2000
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 1.66
+
+//Possible Craft Names
+possibleCraftNames = 
+	"" 
+
+
+//**********************************************************************
+//SYSTEM DAMAGE DISTRIBUTION
+//The following section's values should add up to 100
+//Percent Chance out of 100 of engines being destroyed
+enginesHitPercent = 0.0f
+
+//Percent Chance out of 100 of life support being destroyed
+lifeSupportHitPercent = 10.0f
+
+//Percent Chance out of 100 of weapons being destroyed
+weaponsHitPercent = 0.0f
+
+//Percent Chance out of 100 of shields being destroyed
+shieldGeneratorHitPercent = 1.0f
+
+//Percent Chance out of 100 of sensors being destroyed
+sensorsHitPercent = 1.0f
+
+//Percent Chance out of 100 of hull being hit (crew dying)
+hullHitPercent = 88.0f
+
+//Percent Chance out of 100 of entire ship exploding
+criticalHitPercent = 0.0f
+//**********************************************************************
+
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+
+// Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp10" "hp11" "hp12" "hp14" "hp15" "hp16" "hp18" "hp20"
+lifeSupportTargetHardpoints = "hp10" "hp11" "hp12" "hp14" "hp15" "hp16" "hp18" "hp20"
+weaponsTargetHardpoints = "hp10" "hp11" "hp12" "hp14" "hp15" "hp16" "hp18" "hp20"
+shieldGeneratorTargetHardpoints = "hp10" "hp11" "hp12" "hp14" "hp15" "hp16" "hp18" "hp20"
+sensorsTargetHardpoints = "hp10" "hp11" "hp12" "hp14" "hp15" "hp16" "hp18" "hp20"
+hullTargetHardpoints = "hp10" "hp11" "hp12" "hp14" "hp15" "hp16" "hp18" "hp20"
+criticalTargetHardpoints = "hp10" "hp11" "hp12" "hp14" "hp15" "hp16" "hp18" "hp20"
+
+//**********************************************************************
+
+//**********************************************************************
+//Construction Parameters
+
+//Hardpoint location for building.
+buildHardpoint = "build"
+//**********************************************************************
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 0.50f
+
+
+//**********************************************************************
+
+
+//**********************************************************************
+//MESSAGE & SOUND PARAMETERS
+//**********************************************************************
+
+eventSelect = "SuperblSelect"
+eventAcknowledge = "SuperblAcknowledge"
+eventDecommission = "SuperblDecommission"
+
+//**********************************************************************
+//PROGRAMMING PARAMETERS WHICH SHOULD NOT BE CHANGED & UNUSED PARAMETERS
+
+//Runtime class label for instantiation of object.
+classLabel = "starbase"
+
+//KEYMAP LABEL
+keymapLabel = "starbase"
+
+//change the scale
+ScaleSOD = 2.2
+

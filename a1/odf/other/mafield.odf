@@ -1,0 +1,41 @@
+[GameObjectClass]
+classLabel = "asteroidfield"
+baseName = "sscr_1"
+scrapCost = 6
+scrapValue = 7
+maxHealth = 0
+maxAmmo = 0
+unitName = "Asteroid Field"
+
+minAsteroids = 10
+maxAsteroids = 15
+
+// The bounding spheres of all asteroids will stay within this distance of the center of mass.
+fieldRadius = 100
+
+// How fast the asteroids move.  This is for orbiting (translation) only.
+orbitingSpeed = 1.0
+
+// How fast the asteroids rotate.
+rotationSpeed = 0.2
+
+// Don't touch these unless you know what you are doing.  - MCM
+
+// When asteroids are far from each other, they attract.  But when they get close to each
+// other, they repell.  This is the distance where repulsion and attraction exactly cancel, as
+// a fraction of fieldRadius.  Closer than this they repel; further, they attract.
+repelIfWithin = 0.7
+
+// Sprite to use for minimap display.
+mapSprite = "map_abelt"
+
+// Size of sprite chunk to use for minimap.
+mapSize = 5
+
+// The group as a whole doesn't have a mesh, just the
+// individuals asteroids.
+dont_load_SOD = 1
+
+
+// The individual asteroids get scaled by this factor.
+scaleSOD = 1.5

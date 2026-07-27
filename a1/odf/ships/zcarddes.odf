@@ -1,0 +1,90 @@
+#include "destroy.odf"
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Damar Class"
+tooltip = "Cardassian Damar Class - Energy Dissipator"
+//verboseTooltip = "WRITE ME"
+
+//Race which can build ship & starting race of ship
+race = "cardassian"
+
+//Amount of time required to build ship
+buildTime = 55.0
+
+//Number of officers required to build this ship
+officerCost = 3
+
+//Number of crew required to build ship & Starting crew
+crewCost = 80
+
+//Dilithium Cost to build
+dilithiumCost = 300
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 120
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 0.65
+
+//Maximum Value of Special Energy
+maxSpecialEnergy = 1000
+
+//Rate at which special energy recharges (points per second... we think)
+specialEnergyRate = 10
+
+//Possible Craft Names
+possibleCraftNames = 
+	"Entek" "Teken" "Dakol" "Berak"
+	"Rejal" "Kornek" "Makbar" "Belor"
+	"Keleras" "Kevanak" "Desark" "Prellak"
+	"Draxon" "Prekon" "Veridon" "Kezaran"
+	"Teraxa" "Grevik" "Crovax" "Raxarek"
+	"Tulkes" "Karmak" "Antharn" "Kelak"                                 
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Phaser 
+weapon1 = "zbphas" 
+weaponHardpoints1 = "hp01" "hp02" "hp03" "hp04" "hp06" "hp07" "hp08" "hp09"
+
+// Micro Organisms 
+weapon2 = "hmicro" 
+weaponHardpoints2 = "hp01" "hp02" "hp03" "hp04" "hp06" "hp07" "hp08" "hp09"
+
+// Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp16" "hp19" "hp20" "hp22"
+lifeSupportTargetHardpoints = "hp16" "hp19" "hp20" "hp22"
+weaponsTargetHardpoints = "hp16" "hp19" "hp20" "hp22"
+shieldGeneratorTargetHardpoints = "hp16" "hp19" "hp20" "hp22"
+sensorsTargetHardpoints = "hp16" "hp19" "hp20" "hp22"
+hullTargetHardpoints = "hp13" "hp14" "hp15" "hp16" "hp18" "hp19" "hp20" "hp22"
+criticalTargetHardpoints = "hp16" "hp19" "hp20" "hp22"
+
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+//An abstract number that represents how much extra strength must be
+//used to attack this craft due to its weapons. 
+// (0.0=no weapons, 0.5 = average weapons, 1.0=many good weapons)
+attackPower = 0.25f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 0.25f
+//**********************************************************************
+
+//**********************************************************************
+//CREW STATUS MULTIPLIERS
+
+//The multiplier for the delay between shots for weapons while in yellow status
+weaponYellow = 1.5f
+
+//The multiplier for the delay between shots for weapons while in red status
+weaponRed = 3.0f
+//**********************************************************************
+
+//smaller
+ScaleSOD = 0.6
+

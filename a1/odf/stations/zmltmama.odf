@@ -1,0 +1,7 @@
+#include "zmama.odf"
+
+// Use the mama geometry.
+baseName = "zmama"
+
+// Add crew so that this station can be taken over.
+crewCost = 50

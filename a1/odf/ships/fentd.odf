@@ -1,0 +1,132 @@
+#include "battle.odf"
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Galaxy Class"
+tooltip = "USS Enterprise NCC 1701-D"
+//verboseTooltip = "WRITE ME"
+
+//This ship is a hero.
+isHero = 1
+
+//Ship label provided because this is a unique ship.
+label = "Enterprise NCC 1701-D"
+
+//Race which can build ship & starting race of ship
+race = "federation"
+
+//Amount of time required to build ship
+buildTime = 100.0
+
+//Number of officers required to build this ship
+officerCost = 7
+
+//Number of crew required to build ship & Starting crew
+crewCost = 1500
+
+//Dilithium Cost to build
+dilithiumCost = 500
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 1000
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 3.75
+
+//Maximum Value of Special Energy
+maxSpecialEnergy = 1000
+
+//Rate at which special energy recharges (points per second... we think)
+specialEnergyRate = 10
+
+//**********************************************************************
+//SHIP NAMES
+//Possible Craft Names
+possibleCraftNames = "USS Enterprise-D"
+//**********************************************************************
+
+//**********************************************************************
+//SYSTEM HITPOINTS
+//These values are the hitpoint values of the systems
+//If the value is set to zero the ship does not have that system
+enginesHitPoints = 20
+lifeSupportHitPoints = 20
+weaponsHitPoints = 20
+shieldGeneratorHitPoints = 20
+sensorsHitPoints = 20
+//**********************************************************************
+ 
+
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Phaser
+weapon1 = "fbphas"
+weaponHardpoints1 = "hp01" "hp02" "hp03" "hp04" "hp05" "hp06"
+	"hp07" "hp08" "hp09" "hp10" 
+
+// Photon torpedos
+weapon2 = "fbphot"
+weaponHardpoints2 = "hp16" "hp17" "hp18" "hp19"
+
+
+// Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp20" "hp21"
+lifeSupportTargetHardpoints = "hp22" "hp23"
+weaponsTargetHardpoints = "hp22" "hp23"
+shieldGeneratorTargetHardpoints = "hp22" "hp23"
+sensorsTargetHardpoints = "hp22" "hp23"
+hullTargetHardpoints = "hp20" "hp21" "hp22" "hp23"
+criticalTargetHardpoints = "hp20" "hp21" "hp22" "hp23"
+
+//**********************************************************************
+
+
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+//An abstract number that represents how much extra strength must be
+//used to attack this craft due to its weapons. 
+// (0.0=no weapons, 0.5 = average weapons, 1.0=many good weapons)
+attackPower = 1.00f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 0.75f
+
+
+//**********************************************************************
+//CREW STATUS MULTIPLIERS
+//The multiplier for the delay between shots for weapons while in yellow status
+weaponYellow = 1.0f
+
+//The multiplier for the delay between shots for weapons while in red status
+weaponRed = 2.0f
+//**********************************************************************
+
+
+
+//**********************************************************************
+//MESSAGE & SOUND PARAMETERS
+
+eventSelect = "PicardSelect"
+eventAcknowledge = "PicardAcknowledge"
+eventAttack = "PicardAttack"
+eventRedAlert = "PicardRedAlert"
+eventYellowAlert = "PicardYellowAlert"
+eventGreenAlert = "PicardGreenAlert"
+eventStop = "PicardStop"
+eventMove = "PicardMove"
+eventRepair = "PicardRepair"
+eventDecommission = "PicardDecommission"
+eventTransport = "PicardTransport"
+eventSelfDestruct = "PicardSelfDestruct"
+
+//**********************************************************************
+
+
+//change the scale
+ScaleSOD = 1.6
+
+

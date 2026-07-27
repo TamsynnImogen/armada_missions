@@ -1,0 +1,132 @@
+#include "battle.odf"
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Premonition Class"
+tooltip = "USS Premonition NX 4612 - Gemini Effect & Temporal Stasis Field"
+//verboseTooltip = "WRITE ME"
+
+//This ship is a hero.
+isHero = 1
+
+//Possible Craft Names
+possibleCraftNames = "USS Premonition"
+
+//Race which can build ship & starting race of ship
+race = "federation"
+
+//Amount of time required to build ship
+buildTime = 500.0
+
+//Number of officers required to build this ship
+officerCost = 7
+
+//Number of crew required to build ship & Starting crew
+crewCost = 400
+
+//Dilithium Cost to build
+dilithiumCost = 1000
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 2000
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 15.0
+
+//Maximum Value of Special Energy
+maxSpecialEnergy = 5000
+
+//Rate at which special energy recharges (points per second... we think)
+specialEnergyRate = 50
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// phaser
+weapon1 = "fbphas"
+weaponHardpoints1 = "hp01" "hp02" "hp03" "hp04" "hp05" "hp06"
+	"hp07" "hp08" "hp09" "hp10"
+
+// Photon torpedos
+weapon2 = "fbphot"
+weaponHardpoints2 = "hp01" "hp02" "hp03" "hp04" "hp05" "hp06"
+	"hp07" "hp08" "hp09" "hp10"
+
+//Manheim Effect
+weapon3 = "hmanheim"
+weaponHardpoints3 = "hp11" "hp16"
+
+//Temporal Stasis
+weapon4 = "gtempor"
+weaponHardpoints4 = "hp11" "hp16"
+
+// Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp12" "hp13" 
+lifeSupportTargetHardpoints = "hp14" "hp25" "hp26"
+weaponsTargetHardpoints = "hp14" "hp25" "hp26"
+shieldGeneratorTargetHardpoints = "hp14" "hp25" "hp26"
+sensorsTargetHardpoints = "hp14" "hp25" "hp26"
+hullTargetHardpoints = "hp14" "hp15" "hp25" "hp26"
+criticalTargetHardpoints = "hp12" "hp13" "hp14" "hp25" "hp26"
+
+
+//**********************************************************************
+
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+//An abstract number that represents how much extra strength must be
+//used to attack this craft due to its weapons. 
+// (0.0=no weapons, 0.5 = average weapons, 1.0=many good weapons)
+attackPower = 1.00f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 0.75f
+
+
+//**********************************************************************
+
+//**********************************************************************
+//SYSTEM HITPOINTS
+//These values are the hitpoint values of the systems
+//If the value is set to zero the ship does not have that system
+enginesHitPoints = 20
+lifeSupportHitPoints = 20
+weaponsHitPoints = 20
+shieldGeneratorHitPoints = 20
+sensorsHitPoints = 20
+//**********************************************************************
+ 
+
+
+//**********************************************************************
+//CREW STATUS MULTIPLIERS
+//The multiplier for the delay between shots for weapons while in yellow status
+weaponYellow = 1.0f
+
+//The multiplier for the delay between shots for weapons while in red status
+weaponRed = 2.0f
+//**********************************************************************
+
+
+
+//**********************************************************************
+//MESSAGE & SOUND PARAMETERS
+
+eventSelect = "DemingSelect"
+eventAcknowledge = "DemingAcknowledge"
+eventAttack = "DemingAttack"
+eventRedAlert = "DemingRedAlert"
+eventYellowAlert = "DemingYellowAlert"
+eventGreenAlert = "DemingGreenAlert"
+eventStop = "DemingStop"
+eventMove = "DemingMove"
+eventRepair = "DemingRepair"
+eventTransport = "DemingTransport"
+eventSelfDestruct = "DemingSelfDestruct"
+
+//**********************************************************************
+
+//change the scale
+ScaleSOD = 1.7

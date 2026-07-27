@@ -1,0 +1,32 @@
+#include "zjemyard.odf"
+
+baseName = "zjemyard"
+
+//**********************************************************************
+//MAIN DESIGN PARAMETERS
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Cardassian Shipyard"
+tooltip = "Cardassian Shipyard"
+verboseTooltip = "Constructs Cardassian Galor and Damar class vessels."
+
+//Race which can build ship & starting race of ship
+race = "cardassian"
+
+//Possible Craft Names
+possibleCraftNames = 
+	"Entek" "Teken" "Dakol" "Berak"
+	"Rejal" "Kornek" "Makbar" "Belor"
+	"Keleras" "Kevanak" "Desark" "Prellak"
+	"Draxon" "Prekon" "Veridon" "Kezaran"
+	"Teraxa" "Grevik" "Crovax" "Raxarek"
+	"Tulkes" "Karmak" "Antharn" "Kelak"                                 
+
+//**********************************************************************
+//Construction Parameters
+buildItem0 = "zcardbat"
+buildItem1 = "zcarddes"
+buildItem2 = "romega"
+
+
+

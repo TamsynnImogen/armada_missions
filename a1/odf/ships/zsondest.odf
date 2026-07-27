@@ -1,0 +1,99 @@
+#include "destroy.odf"
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Son'a Destroyer"
+tooltip = "Son'a Destroyer"
+//verboseTooltip = "WRITE ME"
+
+//Race which can build ship & starting race of ship
+race = "sona"
+
+//Amount of time required to build ship
+buildTime = 20.0
+
+//Number of officers required to build this ship
+officerCost = 3
+
+//Number of crew required to build ship & Starting crew
+crewCost = 90
+
+//Dilithium Cost to build
+dilithiumCost = 200
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 120
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 0.6
+
+//Maximum Value of Special Energy
+maxSpecialEnergy = 0
+
+//Rate at which special energy recharges (points per second... we think)
+specialEnergyRate = 0
+
+//**********************************************************************
+//SHIP NAMES
+
+//Possible Craft Names
+possibleCraftNames = 
+	"Tesselan" "Keleras" "Ladon"  "Opalash"  
+	"Rorana" "Thulas" "Aralas" "Astrama" 
+	"Loranda" "Veretha" "Thalando" "Rothara"                        
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Weapon Name (ex. "gphaser" -> gphaser.odf)
+weapon1 = "zdpulse"
+weaponHardpoints1 = "hp01" 
+
+// Pulse Phaser
+weapon2 = "zdpulse"
+weaponHardpoints2 = "hp04"
+
+// photon torpedos
+//weapon3 = "zbphot"
+//weaponHardpoints3 = "hp01" "hp04"
+
+
+// Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp10" "hp11" "hp12" "hp13" "hp14" "hp15"
+lifeSupportTargetHardpoints = "hp10" "hp11" "hp12" "hp13" "hp14" "hp15"
+weaponsTargetHardpoints = "hp10" "hp11" "hp12" "hp13" "hp14" "hp15"
+shieldGeneratorTargetHardpoints = "hp10" "hp11" "hp12" "hp13" "hp14" "hp15"
+sensorsTargetHardpoints = "hp10" "hp11" "hp12" "hp13" "hp14" "hp15"
+hullTargetHardpoints = "hp10" "hp11" "hp12" "hp13" "hp14" "hp15"
+criticalTargetHardpoints = "hp10" "hp11" "hp12" "hp13" "hp14" "hp15"
+
+//**********************************************************************
+
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+//An abstract number that represents how much extra strength must be
+//used to attack this craft due to its weapons. 
+// (0.0=no weapons, 0.5 = average weapons, 1.0=many good weapons)
+attackPower = 0.25f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 0.25f
+
+//**********************************************************************
+
+//**********************************************************************
+//CREW STATUS MULTIPLIERS
+
+//The multiplier for the delay between shots for weapons while in yellow status
+weaponYellow = 1.5f
+
+//The multiplier for the delay between shots for weapons while in red status
+weaponRed = 3.0f
+//**********************************************************************
+
+
+
+
+

@@ -1,0 +1,21 @@
+                               ASSIMILATION
+
+
+OBJECTIVES:
+
+*  Assimilate all vessels in this sector
+*  LOCUTUS must survive
+*  ROMULAN STARBASE must be captured
+*  All ROMULAN SHIPS must be destroyed
+
+
+
+
+
+
+
+HINT: Use transporters and Locutus' holding beam to 
+       capture ships. Build a starbase and use its 
+       transporters to recrew captured ships. 
+       Decommissioning ships and stations will 
+       give you dilithium.
